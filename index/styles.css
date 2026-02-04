@@ -5,14 +5,14 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 i {
-    color: #e7e7e7;
+    color: #d9d9d9;
     font-size: 14px;
     margin-right: 8px;
     margin-left: 8px;
 }
 
 body {
-    color: #e7e7e7;
+    color: #d9d9d9;
     font-family: "Cascadia Mono", "Cascadia Mono", "Segoe Fluent Icons", "Helvetica Neue", Arial,
         sans-serif;
     font-size: 16px;
@@ -94,7 +94,7 @@ body,
     background: transparent;
     border: none;
     border-radius: 4px;
-    color: #e7e7e7;
+    color: #d9d9d9;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
@@ -106,7 +106,7 @@ body,
     &.displayed,
     &.focused,
     &:hover {
-        background: #e7e7e7;
+        background: #d9d9d9;
         overflow: hidden;
     }
 }
@@ -114,8 +114,8 @@ body,
 .binding-mode,
 .tiling-direction {
     background: transparent;
-    color: #e7e7e7;
-    border-color: #e7e7e7;
+    color: #d9d9d9;
+    border-color: #d9d9d9;
     border-radius: 2px;
     line-height: 1;
     padding: 0 8px;
