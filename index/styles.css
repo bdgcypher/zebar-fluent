@@ -1,0 +1,161 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+i {
+    color: #e7e7e7;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+body {
+    color: #e7e7e7;
+    font-family: "Cascadia Mono", "Cascadia Mono", "Segoe Fluent Icons", "Helvetica Neue", Arial,
+        sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+div,
+span,
+p {
+    cursor: default;
+    user-select: none;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100vw;
+}
+
+#root {
+    background: transparent;
+    border-radius: 8px;
+}
+
+.app {
+    border: 1px solid #a1a1a1;
+    border-radius: 8px;
+    background: rgb(43, 43, 45, 0.9);
+    backdrop-filter: blur(6px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 28px;
+    padding: 2px 1vw;
+    margin: 0 12px;
+}
+
+.left,
+.center,
+.right {
+    display: flex;
+}
+
+.left {
+    justify-self: start;
+    align-items: left;
+}
+
+.center {
+    justify-self: center;
+    align-items: center;
+}
+
+.right {
+    justify-self: end;
+    align-items: right;
+}
+
+.logo,
+.date,
+.binding-mode,
+.tiling-direction,
+.paused-button,
+.network,
+.memory,
+.cpu,
+.battery {
+    margin-right: 6px;
+}
+
+.workspaces {
+    display: flex;
+    align-items: left;
+}
+
+.workspace {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    color: #e7e7e7;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 15px;
+    margin-right: 6px;
+    padding: 0;
+    width: 15px;
+
+    &.displayed,
+    &.focused,
+    &:hover {
+        background: #e7e7e7;
+        overflow: hidden;
+    }
+}
+
+.binding-mode,
+.tiling-direction {
+    background: transparent;
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+    border-radius: 2px;
+    line-height: 1;
+    padding: 0 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.paused-button {
+    background: transparent;
+    color: #f57f82;
+    outline: 2px solid #f57f82; /* border */
+    border: none;
+    border-radius: 99px;
+    line-height: 1;
+    padding: 2px 8px;
+    font-family: "Cascadia Mono", "Cascadia Mono", "Helvetica Neue", Arial,
+        sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 500;
+}
+.binding-mode {
+    margin-right: 4px;
+}
+
+.cpu .high-usage {
+    color: #f57f82;
+}
+
+.battery {
+    position: relative;
+}
+
+.battery .charging-icon {
+    position: absolute;
+    font-size: 12px;
+    left: -8px;
+    top: 2px;
+}
+
+.nf-fa-battery_0 {
+  color: #f57f82;
+}
